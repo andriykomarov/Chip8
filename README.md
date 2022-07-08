@@ -21,7 +21,14 @@
 
 ## Introduction
 
-CHIP-8 is an interpreted programming language that ran on the CHIP-8 virtual machine, developed by Joseph Weisbecker in the mid-1970s with the purpose of simplifying the game development process for various 8-bit systems at the time. 
+CHIP-8 is an interpreted programming language that ran on the CHIP-8 virtual machine, developed by Joseph Weisbecker in the mid-1970s with the purpose of simplifying the game development process for various 8-bit systems at the time. [Wikipedia](https://en.wikipedia.org/wiki/CHIP-8)
+
+### Specs: 
+  #### Memory
+  * Chip-8 was usually implemented on systems with 4096 bytes of memory. Being that this a virtual machine, the first 512 bytes of memory were occupied by the interperter iteself. This means that most programs start at address 0x200 although some can start at 0x600. Here is a useful visual representation: 
+  <h5 align="center">
+    <img src="https://i.imgur.com/kCdQ4fq.png" alt="Chip-8 Memory Map" width="500">  
+  </h5>
 
 ## How To Use
 
