@@ -58,7 +58,9 @@ CHIP-8 is an interpreted programming language that ran on the CHIP-8 virtual mac
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and the [Simple DirectMedia Layer (SDL)](https://www.libsdl.org) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and the [Simple DirectMedia Layer (SDL)](https://www.libsdl.org) installed on your computer. From your command line: 
+
+Here are some helpful guides on getting SDL set up on [Windows](https://giovanni.codes/setup-sdl2-with-visual-studio-code-and-mingw64-on-windows/), [Mac](https://www.youtube.com/watch?v=V6ACATpl2LQ), and [Linux](https://www.paulbarrick.com/game-devlopment/game-development-on-linux-using-vscode-sdl2-and-opengl/).
 
 ```bash
 # Clone this repository
@@ -71,10 +73,20 @@ $ cd Chip8
 $ clang++ src/main.cpp src/chip8.cpp src/display.cpp -I/Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks -framework SDL2 -std=c++17
 
 # Run the with the following arguments <Video Scale> <Cycle Delay> <ROM Filename>. 
-$ ./a.out 10 3 SpaceInvaders.ch8
+$ ./a.out 10 3 Airplane.ch8
 ```
+<h5 align="center">
+  <img src="https://i.imgur.com/4igECXV.gif" alt="Chip-8 Running Airplane">  
+</h5>
 
-
+## To Do List 
+  
+  While it seems that most of this project is complete, there are still some things I want to add in no particular order to gain more experience. 
+  
+  * Working sound. 
+  * A debug window that shows the current values in the registers, the current opcode, and maybe even the sprites stored in memory. 
+  * Configurable controls. 
+  
 ## Credits
 
 This software uses the following libraries:
